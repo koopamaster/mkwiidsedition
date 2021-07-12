@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MKWII DSE : Play Now!</title>
+	<meta charset="utf-8">
+	<meta description="lol"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+
+		var show_all=false;
+
+		function showpage(){
+			document.getElementById('loading').style.display='none';
+			document.getElementById('header').style.display='flex';
+			document.body.style.overflowY='scroll';
+			document.getElementById('player').play();
+		};
+
+		function morescreens(){
+			if (show_all){
+				show_all=false;
+document.getElementById('capts-box').style.flexWrap='nowrap';
+document.querySelector('#text').innerText="View more screenshots";
+document.getElementById("shadcapts").style.display="block";
+						}
+			else {
+				show_all=true;
+document.getElementById('capts-box').style.flexWrap='wrap';
+document.querySelector('#text').innerText="View less screenshots";
+document.getElementById("shadcapts").style.display="none";
+				}
+		};
+
+
+		function morevideos(){
+			if (show_all){
+				show_all=false;
+document.getElementById('videos-box').style.flexWrap='nowrap';
+document.querySelector('#textvideos').innerText="View more videos";
+document.getElementById("shadvids").style.display="block";
+						}
+			else {
+				show_all=true;
+document.getElementById('videos-box').style.flexWrap='wrap';
+document.querySelector('#textvideos').innerText="View less videos";
+document.getElementById("shadvids").style.display="none";
+				}
+		};
+
+
+	</script>
+</head>
+<body style="overflow-y: hidden;overflow-x: hidden;"><!-- 
+	<div id="loading">
+		<p id="loading-anim">🏎</p>
+		<h1 id="loading-desc">Loading</h1>
+	</div>
+
+	<script type="text/javascript">
+		loading=document.getElementById('loading');
+		document.body.style.overflowY="hidden";
+	</script>
+ -->
+
+ 	<div id="loading"><h1>Loading</h1></div>
+
+	<main>
+	<header style="display: none;" id="header">
+		<p id="about">
+			Mario Kart Wii, but on DS
+		</p>
+
+
+		<a href="" id="trailer">
+			Watch trailer now
+		</a>
+	</header>
+		<section id="central">
+		<img src="homechannel.png" id="logo" />
+		</section>
+
+
+		<a id="download" class="button">Download now</a>
+
+	</main>
+	<video src="truevideo.mp4" loop autooplay id="player" oncanplay="setTimeout(showpage,800);">wwwwwwwww</video>
+
+	<div id="warning">
+		<p>Avalaible now on</p>
+		<div id="sep-shaded"></div>
+		<ul>
+		<li>PC</li>
+		<li>DS</li>
+		<li>3DS</li>
+		<li>Mobile</li>
+	</ul></div>
+	<section id="attrape">
+		<div class="attrape-content">
+			<figure><img src="wwww.png"/></figure>
+			<article id="first" class="centred">
+				<img src="attrapetitle.png"/>
+				<p>
+				Imagine the Mario Kart Wii Experience, now on the Nintendo DS.<br>
+				Tracks, karts, characters, music, design, almost all the makeable has been recreated in one of most known and most amazing Mario Kart DS's mod.<br> 
+				</p>
+			</article>			
+		</div>
+	</section>
+
+	<section id="downloadzone">
+		<div id="downloadzonebody">
+			<figure>
+				<img src="download.svg"/>
+				<p id="tt">Download here last versions of Mario Kart WII Ds Edition</p>				
+			</figure>
+			<article>
+				<div class="info">
+					<div class="header"><h3>Micro Demo</h3><a>Download</a></div>
+					<p>Contains a full playable micro demo, with the Wild Wing and Coconut Mall</p></div>
+				<a href="" id="link">Installation guide / Help</a>
+			</article>			
+		</div>
+	</section>	
+	<section id="captures">
+		<h1 class="title">Screenshots</h1>
+		<figure id="capts-box">
+			<img src="cap1.png"/>
+			<img src="cap2.png"/>
+			<img src="cap3.png"/>
+			<img src="cap4.png"/>
+			<img src="cap5.png"/>
+			<div class="aftershad" id="shadcapts"></div>
+		</figure>
+			<a class="moreones" id="moreonescapts" title="View more screenshots" onclick="morescreens();">
+				<p id="text">View more screenshots</p>
+			</a>
+	</section>
+	<section id="videos">
+		<h1 class="title">Videos</h1>
+		<figure id="videos-box">
+			<img src="cap1.png"/>
+			<img src="cap2.png"/>
+			<img src="cap3.png"/>
+			<img src="cap4.png"/>
+			<img src="cap5.png"/>
+			<div class="aftershad" id="shadvids"></div>
+		</figure>
+			<a class="moreones" id="moreonesvideos" title="View more screenshots" onclick="morevideos();">
+				<p id="textvideos">View more videos</p>
+			</a>
+	</section>
+	
+
+	<footer>
+		<section id="members">
+			<h1>Our team members</h1>
+			<div>
+			<p>KoopaMaster</p>
+			<p>CaptainLuigi</p>
+			<p>SqueakyCleanSwime</p>
+			<p>Jonás</p>
+			<p>TheGameRatorT</p>
+			</div>
+		</section>
+
+		<div id="second">
+				<p id="bign">This game is not affiliated, <u>under any way</u> by Nintendo. All rights reserved Nintendo 2005-2008-2021</p>
+				<a href="caplouis.github.io">A CaptainLuigi website</a>
+		</div>
+
+
+
+	</footer>
+
+
+
+
+
+	<section id="all">
+		
+		<aside id="devnews">
+			<h1>Development</h1>
+			<ul id="listofdevnews">
+				<li>
+					<h2>30 June 2021</h2>
+					<h3>The <q>micro</q> demo has just been uploaded!</h3>
+					<p>
+						After months of work, and a lot of ask from people, we decided to upload for a concept, a micro-demo.<br>
+						It includes a full playable, with almost 100% of custom assets, from the WII Coconut track to HUD.<br>
+						Feel free to download it : <a href="" class="button-simple">DOWNLOAD</a>
+					</p>
+				</li>
+				<li>
+					<h2>30 June 2021</h2>
+					<h3>The <q>micro</q> demo has just been uploaded!</h3>
+					<p>
+						After months of work, and a lot of ask from people, we decided to upload for a concept, a micro-demo.<br>
+						It includes a full playable, with almost 100% of custom assets, from the WII Coconut track to HUD.<br>
+						Feel free to download it : <a href="" class="button-simple">DOWNLOAD</a>
+					</p>
+				</li>
+				<li>
+					<h2>30 June 2021</h2>
+					<h3>The <q>micro</q> demo has just been uploaded!</h3>
+					<p>
+						After months of work, and a lot of ask from people, we decided to upload for a concept, a micro-demo.<br>
+						It includes a full playable, with almost 100% of custom assets, from the WII Coconut track to HUD.<br>
+						Feel free to download it : <a href="" class="button-simple">DOWNLOAD</a>
+					</p>
+				</li>
+			</ul>
+		</aside>
+		<article id="mainpub">
+			<h2 class="pubtitle title">Screenshots:</h2>
+			<h2 class="pubtitle title">Screenshots:</h2>
+			<h2 class="pubtitle title">Screenshots:</h2>
+			<h2 class="pubtitle title">Screenshots:</h2>
+			<div id="screenshots">
+				<img src="wwww.png">
+				<img src="mmm.png">
+
+			</div>
+
+
+		</article>
+
+
+
+	</section>
+
+
+</body>
+</html>
