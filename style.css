@@ -127,7 +127,7 @@ position: absolute;bottom: 0px;left: 0px;color: red;font-size: 4rem;z-index: -2;
 color: transparent;font-size: 1.4rem;font-family: monospace;margin: 2px 1rem;
 border-top: 1px solid white;margin-top: 0px;align-self: center;margin-bottom: 0px;
 background:  linear-gradient(white,transparent,black);
-background-clip: -webkit-text , -ms-text , text;background-size: 	30%;
+background-clip: text;-webkit-background-clip:text;background-size: 	30%;
 -webkit-animation: 6s aboutanim linear infinite;animation: 6s aboutanim linear infinite;
 }
 
