@@ -1,0 +1,84 @@
+@media all and ( orientation : portrait ) {
+
+
+body{overflow-x: hidden;width: 100vw;background: white;}
+
+body video#player{width: 100vw;top: 75vh;left: 0px;}
+
+main{overflow-x: hidden;background: unset;}
+
+header{align-items: flex-start;background: white;box-shadow: 0px 0px 2px 2px black;}
+
+header p#about{
+	font-size: 240%;background: linear-gradient(white,black,white);font-family: "orbitron";align-self: flex-start;margin-top: 1vh;
+	-webkit-background-clip: text;background-clip: text;
+
+}
+header a#trailer{font-size: 280%;box-shadow: -2px 1px 2px 1px black;}
+
+
+#captures img, #videos img{width: 48%;}
+
+#attrape{height: 80vh;}
+
+#attrape div{flex-direction: column;flex-wrap: wrap;}
+#attrape img{width: 40vh;}
+#attrape figure{align-self: center;}
+#first{width: 90%;}
+#first p{font-size: 320%;}
+
+#attrape figure {width: 85%;display: flex;align-items: center;}
+
+#first img{margin: auto;}
+
+#logo{height: 63vh;width: 160vh;}
+section#central{width: 100%;overflow: hidden;height: 35vh;}
+main #download{font-size: 350%;border-radius: 3vh;font-family: "orbitron";border-width: 2px;}
+
+div#warning{font-size: 500%;flex-direction: column;width: 100%;justify-content: center;border-bottom: 2px solid black;}
+div#warning p{width: 85%;border-bottom: 2px solid black;padding-bottom: 2px;text-align: center;}
+div#warning div{display: none;}
+div#warning ul{margin-top: 5px;font-size: 108%;margin-left: 0px;flex-wrap: wrap;display: flex;flex-direction: row;justify-content: center;align-items: center;}
+div#warning li{padding: 2px;flex: 0 0 48%;box-sizing: border-box;border-width: 2px;margin-bottom: 1vh;}
+
+
+#downloadzone{min-height: 80vh;}
+#downloadzone div#downloadzonebody{flex-direction: column;align-items: center;}
+div#downloadzonebody img{width: 35vw;}
+div#downloadzonebody p#tt{font-size: 400%;width: 90vw;}
+
+div.info{width: 75vw;}
+div.info .header h3{font-size: 500%;flex: 1;text-align: center;margin-top: 1vh;margin-bottom: 4px;flex: 2;align-self: baseline;}
+div.info .header a{font-size: 350%;border-radius: 2.5vw;flex: 0;padding: 3px;}
+div.info p{font-size: 150%;color: black;border-top: 1px solid black;}
+
+h1.title{font-size: 450%;border-width: 6px;border-radius: 1vw;}
+section a.moreones p{font-size: 400%;}
+
+
+#downloadzone article a#link{font-size: 6vw;align-self: center;margin-top: 5vh;border-top: 1px solid black;}
+
+section#members div{font-size: 160%;flex-wrap: wrap;flex-direction: column;}
+section#members h1{font-size: 280%;flex-wrap: wrap;font-family: "nsmb";text-align: center;align-self: center;}
+footer section#members {justify-content: flex-start;}
+
+footer #second {flex-direction: column;font-size: 110%;text-align: center;}
+footer #second a{font-size: 180%;border-radius: 1vh;display: inline-block;align-self: flex-end;margin-right: 1vh;}
+#bign{width: 98%;font-size: 200%;}
+
+}
+
+
+#captures , #videos {overflow-x: hidden;}
+
+@media handheld not ( orientation : portrait ) {
+	*{display: none;}
+}
+
+
+@media all and ( orientation : landscape ) {
+	body , html , main {overflow-x: hidden;}
+
+	body video#player{width: 100vw;left: 0px;}
+}
+
